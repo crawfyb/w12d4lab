@@ -7,7 +7,7 @@ public enum Weapon {
     MACE(35),
     DAGGER(5),
     MORNINGSTAR(40),
-    BOW(15),
+    BOW(60),
     SPEAR(25);
 
 
