@@ -1,4 +1,5 @@
 import characters.Warrior;
+import items.Armour;
 import items.Weapon;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,7 +12,7 @@ public class WarriorTest {
 
     @Before
     public void SetUp(){
-        warrior = new Warrior(100, "Louise", 100, Weapon.BOW);
+        warrior = new Warrior(100, "Louise", Armour.PLATE, Weapon.BOW);
 
     }
 
