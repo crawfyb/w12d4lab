@@ -1,4 +1,5 @@
 import characters.Warrior;
+import items.Weapon;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,7 +11,7 @@ public class WarriorTest {
 
     @Before
     public void SetUp(){
-        warrior = new Warrior(100, "Louise", 100);
+        warrior = new Warrior(100, "Louise", 100, Weapon.BOW);
 
     }
 
@@ -27,6 +28,12 @@ public class WarriorTest {
     @Test
     public void canGetHealth(){
         assertEquals(100, warrior.getHealth());
+    }
+
+    @Test
+    public void canSetWeapon(){
+        warrior.setWeapon(Weapon.AXE);
+        assertEquals(Weapon.AXE, warrior.getWeapon());
     }
 
 
