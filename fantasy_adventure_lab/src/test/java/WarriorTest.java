@@ -18,7 +18,7 @@ public class WarriorTest {
 
     @Test
     public void canGetArmour(){
-        assertEquals(100, warrior.getArmour());
+        assertEquals(Armour.PLATE, warrior.getArmour());
     }
 
     @Test
@@ -35,6 +35,14 @@ public class WarriorTest {
     public void canSetWeapon(){
         warrior.setWeapon(Weapon.AXE);
         assertEquals(Weapon.AXE, warrior.getWeapon());
+    }
+
+    @Test
+    public void canTakeDamage(){
+        warrior.defend(60);
+        assertEquals(90, warrior.getHealth());
+        warrior.defend(10);
+        assertEquals(90, warrior.getHealth());
     }
 
 
