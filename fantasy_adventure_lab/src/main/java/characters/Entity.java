@@ -1,10 +1,11 @@
 package characters;
 
+import behaviours.IDefend;
 import items.Collectable;
 
 import java.util.ArrayList;
 
-public abstract class Entity {
+public abstract class Entity implements IDefend {
 
      int health;
      String name;

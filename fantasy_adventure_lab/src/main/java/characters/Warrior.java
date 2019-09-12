@@ -1,5 +1,6 @@
 package characters;
 
+import behaviours.IAttack;
 import behaviours.IDefend;
 import items.Armour;
 import items.Collectable;
@@ -7,7 +8,7 @@ import items.Weapon;
 
 import java.util.ArrayList;
 
-public class Warrior extends Entity implements IDefend {
+public class Warrior extends Entity implements IAttack {
 
     private ArrayList<Collectable> collectables;
     private Armour armour;
@@ -30,6 +31,10 @@ public class Warrior extends Entity implements IDefend {
         int remove = damage - armour.getResistance();
         if(remove >0){this.health -= remove;}
 
+    }
+
+    public void attack(Entity entity, int damage){
+        entity.defend(damage);
     }
 
     public void setWeapon(Weapon weapon){

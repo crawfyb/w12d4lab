@@ -45,5 +45,11 @@ public class WarriorTest {
         assertEquals(90, warrior.getHealth());
     }
 
+    @Test
+    public void canAttack(){
+        warrior.attack(warrior, 60);
+        assertEquals(90, warrior.getHealth());
+    }
+
 
 }
