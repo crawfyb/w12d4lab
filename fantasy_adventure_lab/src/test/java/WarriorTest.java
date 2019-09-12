@@ -47,7 +47,7 @@ public class WarriorTest {
 
     @Test
     public void canAttack() {
-        warrior.attack(warrior, Weapon.BOW.getDamage());
+        warrior.attack(warrior, warrior.getWeapon().getDamage());
         assertEquals(90, warrior.getHealth());
 
 

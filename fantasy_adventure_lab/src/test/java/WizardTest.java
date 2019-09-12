@@ -14,7 +14,7 @@ public class WizardTest {
 
     @Before
     public void setUp() {
-        wizard = new Wizard(100, "Gav the Wizard", Spell.AVAKEDABRA, Pet.GRIFFIN);
+        wizard = new Wizard(100, "Gav the Troll Wizard", Spell.AVAKEDABRA, Pet.GRIFFIN);
     }
 
     @Test
@@ -24,7 +24,7 @@ public class WizardTest {
 
     @Test
     public void canGetName() {
-        assertEquals("Gav the Wizard", wizard.getName());
+        assertEquals("Gav the Troll Wizard", wizard.getName());
     }
 
     @Test

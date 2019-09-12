@@ -22,6 +22,11 @@ public class Wizard extends Entity {
         if(remove >0){this.health -= remove;}
     }
 
+    public void recover(int health){
+        this.health += health;
+        if(this.health > 100)
+        {this.health = 100;}
+    }
 
     public void castSpell(Entity entity, int damage){
         entity.defend(damage);

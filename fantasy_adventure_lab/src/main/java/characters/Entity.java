@@ -1,11 +1,12 @@
 package characters;
 
 import behaviours.IDefend;
+import behaviours.IRecover;
 import items.Collectable;
 
 import java.util.ArrayList;
 
-public abstract class Entity implements IDefend {
+public abstract class Entity implements IDefend, IRecover {
 
      int health;
      String name;
@@ -15,4 +16,6 @@ public abstract class Entity implements IDefend {
         this.health = health;
         this.name = name;
     }
+
+
 }

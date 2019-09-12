@@ -57,6 +57,12 @@ public class Warrior extends Entity implements IAttack {
         return this.health;
     }
 
+    public void recover(int health){
+        this.health += health;
+        if(this.health > 100)
+        {this.health = 100;}
+    }
+
     public String getName(){
         return this.name;
     }
