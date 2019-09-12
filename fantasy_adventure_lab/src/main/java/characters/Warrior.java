@@ -1,7 +1,6 @@
 package characters;
 
 import behaviours.IAttack;
-import behaviours.IDefend;
 import items.Armour;
 import items.Collectable;
 import items.Weapon;
